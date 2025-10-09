@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        /*int intA, intB;
+        intA = 4;
+
+        System.out.println(intA);
+
+        Scanner cs = new Scanner(System.in);
+
+        int A = cs.nextInt();
+        int B = cs.nextInt();
+        // int sum = A + B;
+
+        System.out.println(A+B);
+
+        int a;
+        double b = 3.5;
+
+        a = (int) b / 2;
+        System.out.println(a);
+        System.out.println(b);*/
+
+        Scanner cs = new Scanner(System.in);
+
+        // cs.useLocale(Locale.US);
+        double a = cs.nextDouble();
+
+        System.out.println(a);
+    }
+}
