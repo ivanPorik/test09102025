@@ -7,19 +7,19 @@ public class Main {
         a = cs.nextInt();
         b = cs.nextInt();
 
-        /*boolean bool1 = a <= 0 || a >= 10;
+        boolean bool1 = a <= 0 || a >= 10;
         boolean bool2 = b <= 0 || b >= 10;
 
         System.out.println(bool1);
-        System.out.println(bool2);*/
+        System.out.println(bool2);
 
         System.out.println(a > b ? "A is more then " + b : "B is more then " + a);
 
-        /*double x, y;
+        double x, y;
         x = cs.nextDouble();
         y = cs.nextDouble();
 
-        boolean boolA = x < 2 && x*x + y*y > 4 && y < x && y > 0;*/
+        boolean boolA = x < 2 && x*x + y*y > 4 && y < x && y > 0;
         double x, y;
         x = cs.nextDouble();
         y = cs.nextDouble();
