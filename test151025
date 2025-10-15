@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = 0, n;
+        int curDmg = sc.nextInt();
+        int delta =  sc.nextInt();
+        int sec = sc.nextInt();
+        int sum = 0;
+        
+        while (sec > 0) {
+            sum += curDmg;
+            curDmg -= delta;
+            if (curDmg < 0) {
+                break;
+            }
+            sec--;
+        }
+        
+        System.out.print(sum);
+        /*while (i < 10) {
+            System.out.println("hello");
+            i++;
+        }*/
+        do {
+            n = sc.nextInt();
+            System.out.println(n + 1);
+        } while (n < 10);
+    }
+}
