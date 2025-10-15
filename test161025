@@ -1,0 +1,9 @@
+public class Main {
+    static void main(String[] args) {
+        String[] names = {"Anton", "Kirill", "Ivan"}; // создаем массив
+
+        for (int i = 0; i < 3; i++) {
+            System.out.print(names[i] + " ");
+        } // используем цикл for для вывода массива
+    }
+}
