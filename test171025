@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        /*int i = sc.nextInt();
+        int a = i + 10;
+
+        for (; i < a; i++) {
+            System.out.println("hello");
+        }
+
+        int[] array = {1, 2,  3, 4, 5, 6, 7, 8, 9, 10};
+        // array[0] = 1 способ 1: очень долгий
+
+        System.out.println(array[5]);
+        System.out.print("Введите кол-во элементов в списке: ");
+        int n =  sc.nextInt();
+        String[] arrays = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Введите " + (i + 1) + " элемент: ");
+            arrays[i] = sc.next();
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.println(arrays[i]);
+        }*/
+        for (int i : array) {
+            if (i == 3) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
