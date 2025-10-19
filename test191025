@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] array = {10, 8, 6};
+        int[] array2 = {4, 8, 67, 43};
+        String doing = sc.nextLine();
+        if (doing.equals("power")) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            powAofB(a, b);
+        }
+        printArray(array);
+        printArray(array2);
+        int[] array3 = new int[10];
+        fillArrayRandom(array3);
+        printArray(array3);
+    }
+
+    public static void fillArrayRandom(int[] ar) {
+        for (int i = 0; i < ar.length; i++) {
+            ar[i] = (int) (Math.random() * 100);
+        }
+    }
+
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static int powAofB (int a, int b) {
+        int j = a;
+        for (; b > 1; b--) {
+            a *= j;
+        }
+        System.out.println(a);
+        return a;
+    }
+}
